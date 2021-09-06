@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500&display=swap');
+/*selector universal (reset)*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'David Libre', serif;
+	color:;
+}
+
+nav img{
+	height: 50px;
+}
+
+header{
+	height: 30vh;
+	background: url(../img/ipcna4.jpg) top center;
+	background-size: cover;
+}
+
+section img{
+	border-radius: 10px;
+}
+
+.scale:hover{
+	transform: scale(1.2);
+	cursor: pointer;
+	transition: transform 2s;
+}
+
+@media only screen and (min-width: 992px){
+	header{
+		height: 70vh;
+	}
+}
+
+footer h3{
+	color: black;
+}
+
+footer img{
+	height: 50px;
+}
+
+@media only screen and (min-width: 992px){
+	header{
+		height: 100vh;
+	}
+}

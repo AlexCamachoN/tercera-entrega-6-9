@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=David+Libre:wght@400;500&display=swap');
+/*selector universal (reset)*/
+*{
+	margin: 0;
+	padding: 0;
+	font-family: 'David Libre', serif;
+	color: black;
+}
+
+div nav header main section footer{
+	padding: 20px;
+}
+
+body{
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 4vh 10vh auto auto 20vh 10vh;
+	grid-template-areas: "div" "nav" "header" "main" "section" "footer";
+}
+
+div{
+	background-color: #C9C1C1;
+	grid-area: div;
+	display: flex;
+}
+
+nav{
+	background-color: #E3DBDB;
+	grid-area: nav;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	flex-direction: column;
+	padding: 10px 40px 10px 40px;
+}
+
+	nav ul{
+		display: flex;
+	}
+
+		nav ul li{
+			list-style: none;
+			display: inline-block;
+			margin: 0 10px;
+		}
+
+			nav ul li a{
+				color:black;
+				text-transform: uppercase;
+				text-decoration: none;
+			/*Subrayado animado*/
+			  	background-image: linear-gradient(currentColor, currentColor);
+   				background-position: 0% 100%;
+    			background-repeat: no-repeat;
+    			background-size: 0% 2px;
+    			transition: background-size .3s;
+			}
+
+			a:hover, a:focus {
+    			background-size: 100% 2px;
+			}
